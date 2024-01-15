@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101010;
+  font-family: 'Lucida Sans', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  color: #ffffff;
+}
+
+.game {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 10px;
+}
+
+.card {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: #7304ea;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card.flipped {
+  background-color: #313131;
+}
+
+.card:hover {
+  background-color: #313131;
+}
+
+.btn {
+  width: 350px;
+  background-color: #7304ea;
+  font-weight: bold;
+  color: #ffffffde;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #7f0ef8;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 70px;
+    height: 70px;
+  }
+
+  .board {
+    grid-template-columns: repeat(4, 70px);
+    gap: 5px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}
