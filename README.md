@@ -1,6 +1,6 @@
 # 🧠 Memory Game
 
-<img src='./assets/memory-game.png'>
+<img src='/src/assets/memory-game.png'>
 
 <h1 align="center"><a href="https://bs-memory-game.vercel.app/">I'm here 👀</a></h1>
 
